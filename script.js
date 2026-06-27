@@ -1,4 +1,3 @@
-// Script for cinematic transitions and interactive hotspots
 const landing = document.getElementById('landing');
 const map = document.getElementById('map-screen');
 const infoScreens = document.getElementById('info-screens');
@@ -69,3 +68,6 @@ hotspots.forEach(h=>{
 // Preload some images to make transitions smoother
 const imgs = Array.from(document.querySelectorAll('.info-gallery img, .map-screen .bg, .landing .bg')).map(i=>i.src||i.style.backgroundImage);
 imgs.forEach(src=>{if(!src) return; const url = src.replace(/^url\(['"]?|['"]?\)$/g,''); const img=new Image(); img.src=url});
+
+
+
